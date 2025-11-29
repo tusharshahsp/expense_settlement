@@ -10,6 +10,7 @@ This document consolidates the configuration steps for running every component l
 
 ```bash
 cd backend
+chmod -R u+rwX data media app
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -22,7 +23,7 @@ export APP_ENV=dev
 uvicorn app.main:app --reload
 ```
 
-- Users, groups, and avatars are stored under `backend/data/` and `backend/media/`.
+- Users, groups, and avatars are stored under `backend/data/` and `backend/media/`; confirm the user running the API can write to those directories.
 - API available at http://localhost:8000 with Swagger docs at `/docs`.
 
 ### MySQL + S3 (production parity)

@@ -12,6 +12,7 @@ The backend is a FastAPI application that can run entirely in file-storage mode 
 
 ```bash
 cd backend
+chmod -R u+rwX data media app
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -25,6 +26,7 @@ uvicorn app.main:app --reload --port 8000
 ```
 
 Users, groups, and avatars will be stored under `backend/data` and `backend/media`.
+Ensure the process user has read/write permissions on those directories (and update the `chmod` command above if running on a shared environment).
 
 ## Running (MySQL + S3)
 

@@ -63,7 +63,9 @@ The latest run (from this session) shows both backend and frontend suites passin
 ## Documentation & next steps
 
 - [docs/API.md](docs/API.md) – REST endpoint reference.
-- [docs/LOCAL_DEV.md](docs/LOCAL_DEV.md) – Configuration matrices for dev/QA environments.
+- [docs/DEV.md](docs/DEV.md) – Minimal dev setup (file storage + local services).
+- [docs/LOCAL_DEV.md](docs/LOCAL_DEV.md) – Expanded local setup matrices and env vars.
+- [docs/PROD.md](docs/PROD.md) – Full AWS deployment guide (Terraform, ECS, RDS, S3).
 - [docs/SECURITY.md](docs/SECURITY.md) – Security posture & recommendations.
 - [backend/README.md](backend/README.md) – FastAPI setup, prod vs. dev modes, pytest instructions.
 - [frontend/README.md](frontend/README.md) – Vite dev server, env vars, Vitest usage.
